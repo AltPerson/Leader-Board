@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/leaderBoard/static/css/main.2a394d6f.chunk.css",
-    "main.js": "/leaderBoard/static/js/main.1f287b14.chunk.js",
-    "main.js.map": "/leaderBoard/static/js/main.1f287b14.chunk.js.map",
+    "main.css": "/leaderBoard/static/css/main.6e2b95e6.chunk.css",
+    "main.js": "/leaderBoard/static/js/main.8d02035d.chunk.js",
+    "main.js.map": "/leaderBoard/static/js/main.8d02035d.chunk.js.map",
     "runtime-main.js": "/leaderBoard/static/js/runtime-main.4588c450.js",
     "runtime-main.js.map": "/leaderBoard/static/js/runtime-main.4588c450.js.map",
     "static/js/2.c80c73f3.chunk.js": "/leaderBoard/static/js/2.c80c73f3.chunk.js",
     "static/js/2.c80c73f3.chunk.js.map": "/leaderBoard/static/js/2.c80c73f3.chunk.js.map",
     "index.html": "/leaderBoard/index.html",
-    "static/css/main.2a394d6f.chunk.css.map": "/leaderBoard/static/css/main.2a394d6f.chunk.css.map",
+    "static/css/main.6e2b95e6.chunk.css.map": "/leaderBoard/static/css/main.6e2b95e6.chunk.css.map",
     "static/js/2.c80c73f3.chunk.js.LICENSE.txt": "/leaderBoard/static/js/2.c80c73f3.chunk.js.LICENSE.txt",
     "static/media/HelveticaNeue.9dbbc9db.ttf": "/leaderBoard/static/media/HelveticaNeue.9dbbc9db.ttf",
     "static/media/user1-1.e63971db.png": "/leaderBoard/static/media/user1-1.e63971db.png",
@@ -30,7 +30,7 @@
   "entrypoints": [
     "static/js/runtime-main.4588c450.js",
     "static/js/2.c80c73f3.chunk.js",
-    "static/css/main.2a394d6f.chunk.css",
-    "static/js/main.1f287b14.chunk.js"
+    "static/css/main.6e2b95e6.chunk.css",
+    "static/js/main.8d02035d.chunk.js"
   ]
 }
