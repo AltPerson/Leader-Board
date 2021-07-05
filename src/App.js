@@ -1,23 +1,60 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
+import List from "./components/List/List";
+import data from "./components/data";
+import { useState } from "react";
 
 function App() {
+  const [showAll, setShowAll] = useState(false);
+  const [showAllTime, setShowAllTime] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <main className="app-main main">
+        <div className="main-container">
+          <h1 className="main__title">LeaderBoard</h1>
+          <div className="main-switcher">
+            <button
+              onClick={(e) => {
+                if (e.target.classList.contains("switcher-button-selected")) {
+                  return;
+                }
+                setShowAllTime(!showAllTime);
+              }}
+              className={`main-switcher__one ${
+                showAllTime
+                  ? "switcher-button-normal"
+                  : "switcher-button-selected"
+              }`}
+            >
+              Last 30 days
+            </button>
+            <button
+              onClick={(e) => {
+                if (e.target.classList.contains("switcher-button-selected")) {
+                  return;
+                }
+                setShowAllTime(!showAllTime);
+              }}
+              className={`main-switcher__two ${
+                showAllTime
+                  ? "switcher-button-selected"
+                  : "switcher-button-normal"
+              }`}
+            >
+              All-Time
+            </button>
+          </div>
+          <div className="main-list">
+            <List
+              usersData={data}
+              showAll={showAll}
+              showAllTime={showAllTime}
+            />
+          </div>
+          <button onClick={() => setShowAll(!showAll)} className="main__button">
+            View Everyone
+          </button>
+        </div>
+      </main>
     </div>
   );
 }

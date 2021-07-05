@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  font-family: "HelveticaNeue";
+  height: 100%;
+  background-color: #f2f3f7;
+  text-align: center;
+  padding: 5% 0;
+}
+
+.main {
+  border-radius: 50px;
+  background-color: #ffff;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 70px;
+}
+
+.main__title {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.main-switcher {
+  margin: 40px auto;
+  border: 1px solid #d5daef;
+  display: inline-block;
+  border-radius: 25px;
+  background-color: #f2f3f7;
+  padding: 4px 4px;
+
+  %switcher-button {
+    padding: 16px 21px 11px;
+    border-radius: 25px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+      box-shadow: 0px 0px 7px rgba(23, 31, 87, 0.6);
+    }
+  }
+  .switcher-button-normal {
+    @extend %switcher-button;
+    background-color: transparent;
+  }
+  .switcher-button-selected {
+    @extend %switcher-button;
+    background-color: white;
+    box-shadow: 0px 3px 7px rgba(23, 31, 87, 0.2);
+  }
+
+  &__one {
+    margin-right: 5px;
+  }
+  &__two {
+  }
+}
+.main__button {
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  border-radius: 25px;
+  padding: 26px 50px;
+  background-color: #0e1126;
+  color: white;
+  cursor: pointer;
+  margin-top: 64px;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: #252c5f;
+  }
+}
