@@ -52,6 +52,9 @@
   }
   &-images {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     &__child {
       margin-left: 10px;
       width: 100px;

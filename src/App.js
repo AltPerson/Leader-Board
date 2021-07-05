@@ -55,6 +55,20 @@ function App() {
           </button>
         </div>
       </main>
+      <div className="reff">
+        Icons made by{" "}
+        <a href="https://www.freepik.com" title="Freepik">
+          Freepik
+        </a>{" "}
+        from{" "}
+        <a href="https://www.flaticon.com/" title="Flaticon">
+          www.flaticon.com
+        </a>
+        <br></br>
+        <a href="https://www.uidesigndaily.com/posts/xd-leaderboard-list-day-1369">
+          Original Template
+        </a>
+      </div>
     </div>
   );
 }

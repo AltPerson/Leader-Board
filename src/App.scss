@@ -7,9 +7,12 @@
 .app {
   font-family: "HelveticaNeue";
   height: 100%;
+  width: 100%;
   background-color: #f2f3f7;
   text-align: center;
   padding: 5% 0;
+  @media screen and (max-width: 496px) {
+  }
 }
 
 .main {
@@ -18,6 +21,9 @@
   display: inline-block;
   margin: 0 auto;
   padding: 70px;
+  @media screen and (max-width: 496px) {
+    width: 100%;
+  }
 }
 
 .main__title {
@@ -75,4 +81,9 @@
   &:hover {
     background-color: #252c5f;
   }
+}
+
+.reff {
+  margin-top: 30px;
+  text-align: center;
 }
