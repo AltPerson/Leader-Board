@@ -51,7 +51,7 @@ function App() {
             />
           </div>
           <button onClick={() => setShowAll(!showAll)} className="main__button">
-            View Everyone
+            {!showAll ? "View Everyone" : "View Less"}
           </button>
         </div>
       </main>
